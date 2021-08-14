@@ -1,0 +1,11 @@
+[package]
+name    = "telegraph"
+version = "0.0.1"
+
+[dependencies]
+# program initialization at startup and exit
+static_init = "1.0"
+# logging mostly used in any program runs in batch or manual
+log = "0.4"
+# FFI interface with standard libc required for any system tool
+libc = "0.2"

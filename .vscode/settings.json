@@ -1,0 +1,45 @@
+{
+    // \ multi: hotkey bindings
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.f11",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; make repl \u000D"}}
+            ]
+        },
+        {
+            "command": "multiCommand.f12",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; make all \u000D"}}
+            ]
+        },
+    ],
+    // / multi
+
+    // \ files
+    // exclude files from left-side IDE view
+    "files.exclude": {
+        "**/target/**":true,
+    },
+    // disable file changes watch
+    // (count is limited by OS and slows down refresh)
+    "files.watcherExclude": {
+    },
+    // associate file types with
+    // syntax highlight & editor plugins
+    "files.associations": {
+    },
+    // \ files
+
+    // \ editor: tunings
+    "editor.tabSize": 4,
+    "editor.rulers": [80],
+    "workbench.tree.indent": 32,
+    // / editor
+
+    "browser-preview.startUrl": "127.0.0.1:34401/"
+}

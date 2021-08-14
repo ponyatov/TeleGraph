@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ryuta46.multi-command",
+        "stkb.rewrap",
+        "auchenberg.vscode-browser-preview",
+        // specific for Rust
+        "rust-lang.rust",
+        "bungcip.better-toml",
+    ]
+}
